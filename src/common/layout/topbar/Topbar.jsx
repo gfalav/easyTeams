@@ -7,7 +7,7 @@ import User from './User'
 import { useRecoilState, useRecoilValue } from 'recoil'
 import { drawerWidth, toggleMenu } from '../../../recoil/Recoil'
 
-export default function Topbar({mleft, widthBar}) {
+export default function Topbar() {
     const [tMenu, setTMenu] = useRecoilState(toggleMenu)
     const dw = useRecoilValue(drawerWidth)
 

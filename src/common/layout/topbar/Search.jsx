@@ -14,10 +14,10 @@ export default function Search() {
     })
 
     return(
-        <Box sx={{ ml: 6 }}>
+        <Box sx={{ ml: {sx: 2, sm: 0} }}>
             <form onSubmit={formik.handleSubmit}>
                 <TextField type="text" id="busca" name="busca" onChange={formik.handleChange} value={formik.values.busca}
-                    size="small" color="menuColor" focused sx={{ input: { color: 'white', width: {xs: 50, sm: 150} }}}/>
+                    size="small" color="menuColor" focused sx={{ input: { color: 'white', width: {xs: 100, sm: 150} }}}/>
                 <IconButton color="menuColor"><SearchIcon /></IconButton>
             </form>
         </Box>

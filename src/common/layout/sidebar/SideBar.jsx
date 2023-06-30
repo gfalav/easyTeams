@@ -1,6 +1,7 @@
 import { Box, Drawer } from "@mui/material";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { drawerWidth, isMb, toggleMenu } from "../../../recoil/Recoil";
+import SideLogo from "./SideLogo";
 
 export default function Sidebar() {
     const dw = useRecoilValue(drawerWidth)
@@ -24,7 +25,8 @@ export default function Sidebar() {
                     <Box sx={{
                         width: dw, height: window.innerHeight
                     }}>
-                        Drawer
+                        <SideLogo />
+                        SideBar
                     </Box>
             </Drawer>
         </Box>
