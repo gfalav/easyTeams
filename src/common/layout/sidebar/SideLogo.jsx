@@ -9,13 +9,13 @@ export default function SideLogo() {
         <Box 
             component={Link} to='/'
             sx={{
-                display: 'flex', alignItems: 'center', justifyContent: "center"
+                display: 'flex', alignItems: 'center', justifyContent: "center", mt: 0.5
             }}>
                 <Box component='img'
                     src={logo}
                     alt="logo"
                     sx={{
-                        height: 66
+                        height: 66, width: 235
                     }} />
         </Box>
     )

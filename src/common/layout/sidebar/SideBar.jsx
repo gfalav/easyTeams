@@ -23,7 +23,7 @@ export default function Sidebar() {
                                           },
                 }}>
                     <Box sx={{
-                        width: dw, height: window.innerHeight
+                        width: dw, height: window.innerHeight, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'start'
                     }}>
                         <SideLogo />
                         SideBar
