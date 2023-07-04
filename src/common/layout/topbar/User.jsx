@@ -48,6 +48,9 @@ export default function User() {
             case 'reset':
                 navigate('/auth/reset')
                 break
+            case 'chpass':
+                navigate('/auth/update-password')
+                break
             default:
                 navigate('/')
         }
@@ -75,7 +78,8 @@ export default function User() {
                 { !usr && <MenuItem onClick={() => {handleClose('signin')}}>SignIn</MenuItem> }
                 { !usr && <MenuItem onClick={() => {handleClose('signup')}}>SignUp</MenuItem> }
                 { !usr && <MenuItem onClick={() => {handleClose('reset')}}>Reset</MenuItem> }
-                { usr && <MenuItem onClick={() => {handleClose('editusr')}}>EditUsr</MenuItem> }
+                { usr && <MenuItem onClick={() => {handleClose('editusr')}}>Edit User</MenuItem> }
+                { usr && <MenuItem onClick={() => {handleClose('chpass')}}>Change Password</MenuItem> }
                 { usr && <MenuItem onClick={() => {handleClose('signout')}}>SignOut</MenuItem> }
             </Menu>
         </Box>
