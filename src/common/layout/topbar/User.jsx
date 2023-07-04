@@ -45,6 +45,9 @@ export default function User() {
             case 'editusr':
                 navigate('/auth/editusr')
                 break
+            case 'reset':
+                navigate('/auth/reset')
+                break
             default:
                 navigate('/')
         }
@@ -71,6 +74,7 @@ export default function User() {
             >
                 { !usr && <MenuItem onClick={() => {handleClose('signin')}}>SignIn</MenuItem> }
                 { !usr && <MenuItem onClick={() => {handleClose('signup')}}>SignUp</MenuItem> }
+                { !usr && <MenuItem onClick={() => {handleClose('reset')}}>Reset</MenuItem> }
                 { usr && <MenuItem onClick={() => {handleClose('editusr')}}>EditUsr</MenuItem> }
                 { usr && <MenuItem onClick={() => {handleClose('signout')}}>SignOut</MenuItem> }
             </Menu>
