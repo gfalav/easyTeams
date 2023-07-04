@@ -1,6 +1,6 @@
 import { Box, Drawer } from "@mui/material";
 import { useRecoilState, useRecoilValue } from "recoil";
-import { drawerWidth, isMb, toggleMenu } from "../../../recoil/Recoil";
+import { drawerWidth, isMb, toggleMenu } from "../../recoil/Recoil";
 import SideLogo from "./SideLogo";
 
 export default function Sidebar() {

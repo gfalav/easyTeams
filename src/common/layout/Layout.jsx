@@ -2,7 +2,7 @@ import { Box, useMediaQuery } from "@mui/material"
 import Topbar from "./topbar/Topbar"
 import { Outlet } from "react-router-dom"
 import { useRecoilValue, useSetRecoilState } from "recoil"
-import { drawerWidth, isMb } from "../../recoil/Recoil"
+import { drawerWidth, isMb } from "../recoil/Recoil"
 import React from "react"
 import Sidebar from "./sidebar/SideBar"
 

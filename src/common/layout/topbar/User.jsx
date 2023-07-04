@@ -3,7 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import supabase from "../../sb/Sb";
 import { useRecoilState } from "recoil";
-import { user } from "../../../recoil/Recoil";
+import { user } from "../../recoil/Recoil";
 import AvatarImg from "./AvatarImg";
 
 export default function User() {

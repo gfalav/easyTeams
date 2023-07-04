@@ -1,5 +1,5 @@
 import { Box } from "@mui/material"
-import bg from "../../images/bg.jpg"
+import bg from "../images/bg.jpg"
 
 export default function Home () {
 

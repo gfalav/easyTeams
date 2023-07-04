@@ -4,7 +4,7 @@ import * as Yup from 'yup'
 import LockOpenIcon from '@mui/icons-material/LockOpen'
 import { purple } from '@mui/material/colors'
 import { Link, useNavigate } from 'react-router-dom'
-import supabase from "../../sb/Sb"
+import supabase from "../sb/Sb"
 import React from "react"
 
 export default function SignUp() {

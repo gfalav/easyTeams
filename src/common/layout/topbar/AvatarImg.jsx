@@ -1,6 +1,6 @@
 import { Avatar, Box } from "@mui/material"
 import { useRecoilValue } from "recoil"
-import { avatarImg, user } from "../../../recoil/Recoil"
+import { avatarImg, user } from "../../recoil/Recoil"
 import React from "react"
 import supabase from "../../sb/Sb"
 
