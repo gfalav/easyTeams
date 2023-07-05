@@ -29,7 +29,7 @@ export default function SideMenu() {
                     </AccordionSummary>
                     <AccordionDetails sx={{ ml: 1.5, bgcolor: '#233044' }}>
                         <Box sx={{ display: 'flex', flexDirection: 'row'}}>
-                            <Button component={Link} to='/resources'>
+                            <Button component={Link} to='/resourcecard'>
                                 <Box sx={{ display: 'flex', flexDirection: 'row'}}>
                                     <ListIcon sx={{ mr: 1.5, color: '#878D96' }}/>
                                     <Typography color='#ffffff'>

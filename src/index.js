@@ -14,6 +14,7 @@ import SignIn from './common/auth/SignIn'
 import EditUsr from './common/auth/EditUsr'
 import Reset from './common/auth/Reset'
 import UpdatePwd from './common/auth/UpdatePwd'
+import ResourceCard from './app/resources/ResourceCard'
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,8 @@ const router = createBrowserRouter([
       { path: "auth/signin", element: <SignIn />},
       { path: "auth/reset", element: <Reset />},
       { path: "auth/update-password", element: <UpdatePwd />},
-      { path: "auth/editusr", element: <EditUsr />}
+      { path: "auth/editusr", element: <EditUsr />},
+      { path: "resourcecard", element: <ResourceCard resource={{cargo: 'Gerente Comercial', nombre: 'Gustavo Falavigna', cel: 2664512644, email: 'gfalav@hotmail.com'}}/>}
     ],
   },
 ])
