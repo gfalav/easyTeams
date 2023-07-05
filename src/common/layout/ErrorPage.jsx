@@ -1,5 +1,5 @@
-import { Box, Typography } from "@mui/material";
-import { useRouteError } from "react-router-dom"
+import { Box, Button, Typography } from "@mui/material";
+import { Link, useRouteError } from "react-router-dom"
 
 export default function ErrorPage() {
   const error = useRouteError()
@@ -22,6 +22,7 @@ export default function ErrorPage() {
       <Typography>
         Error: {error.statusText || error.message}
       </Typography>
+      <Button component={Link} to="/" variant="outlined" sx={{ mt: 5 }}>Return to Home</Button>
     </Box>
   );
 }
